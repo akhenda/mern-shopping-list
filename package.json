@@ -10,7 +10,9 @@
     "test": "jest",
     "start": "babel-node -- index",
     "lint": "eslint index.js src/**/*.js __tests__/**/*.js",
-    "validate": "yarn run lint && yarn run test"
+    "validate": "yarn run lint && yarn run test",
+    "precommit": "yarn run validate",
+    "prepush": "yarn run validate"
   },
   "repository": {
     "type": "git",
@@ -51,6 +53,7 @@
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "husky": "^0.14.3",
     "jest": "^23.5.0",
     "regenerator-runtime": "^0.12.1"
   }
