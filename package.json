@@ -1,0 +1,31 @@
+{
+  "name": "mern-shopping-list",
+  "version": "0.0.1",
+  "description": "Shopping List built with the MERN Stack",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhenda/mern-shopping-list.git"
+  },
+  "keywords": [
+    "MERN",
+    "MongoDB",
+    "Express",
+    "React",
+    "NodeJS",
+    "Shopping",
+    "List"
+  ],
+  "author": "Joseph Akhenda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akhenda/mern-shopping-list/issues"
+  },
+  "homepage": "https://github.com/akhenda/mern-shopping-list#readme"
+}
