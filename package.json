@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "babel-node -- index",
     "lint": "eslint index.js src/**/*.js __tests__/**/*.js",
     "validate": "yarn run lint && yarn run test"
@@ -31,13 +31,27 @@
     "url": "https://github.com/akhenda/mern-shopping-list/issues"
   },
   "homepage": "https://github.com/akhenda/mern-shopping-list#readme",
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "html"
+    ]
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.5.0",
+    "regenerator-runtime": "^0.12.1"
   }
 }
